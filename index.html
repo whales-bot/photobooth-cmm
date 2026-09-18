@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Photobooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Web Photobooth</h1>
+        
+        <!-- Area Tampilan Kamera & Canvas -->
+        <div class="booth">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        
+        <!-- Tombol Aksi -->
+        <div class="controls">
+            <button id="snap-btn">Ambil Foto</button>
+            <a id="download-btn" style="display:none;">Download Foto</a>
+        </div>
+        
+        <!-- Hasil Foto -->
+        <div class="preview-container">
+            <h3>Hasil Foto:</h3>
+            <img id="photo-preview" src="" alt="Hasil foto akan muncul di sini" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
